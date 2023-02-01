@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicTacToe</title>
+</head>
+
+<body>
+
+
+    <div id='gameBoard'>
+        <img src="/images/logo.png" alt="logo">
+        <h1>TIC TAC TOE</h1>
+
+
+        <div class="game">
+            <label>X Player
+                <p id="name1"></p>
+            </label>
+            <div class="container" id="container">
+            </div>
+            <label>O Player
+                <p id="name2"></p>
+            </label>
+        </div>
+        <button id='restartBtn'>Restart</button>
+        <button id='resetBtn'>Reset</button>
+    </div>
+
+    <div id="popup">
+        <h1>TIC TAC TOE</h1>
+        <img src="/images/logo.png" alt="logo">
+        <div class="input">
+            <label for="playerXName">Name X
+                <input class="input" id="playerXName" type="text" />
+            </label>
+            <label for="playerONamet">Name O
+                <input class="input" id="playerOName" type="text" />
+            </label>
+        </div>
+        <p id="errors"></p>
+        <button id='startBtn'>Start Game</button>
+    </div>
+    <div class="result-message">
+        <div class="results"></div>
+        <button id='closeBtn'>Close</button>
+    </div>
+    <script src="tictactoe.js" defer></script>
+</body>
+
+</html>
